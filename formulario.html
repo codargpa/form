@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+      form {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          
+          padding: 2% 3%;
+          padding-bottom: 8%;
+          width: 30%;
+          border-width: 10px;
+          border-style: groove; 
+          border-color: #000000;
+  
+        }
+        </style>
+</head>
+  
+<body>
+
+<form action="/action_page.php" method="post" >
+  <label for="fnome">Nome:</label>
+  <input type="name" id="fnome" name="fnome"><br><br>
+  
+  <label for="dnasci">data nascimento</label>
+  <input type="date" id="dnasci" name="dnasci"><br>
+  
+  <p>Sexo
+  <input type="radio" id="mascu" name="fsexo" value="mascu">
+  <label for="mascu">Mascu</label>
+  <input type="radio" id="fem" name="fsexo" value="Fem">
+  <label for="fem">Fem</label>
+  <input type="radio" id="nao_informar" name="fsexo" value="Nao_informar">
+  <label for="nao_informar">Prefiro não Informar</label></p>
+  
+  <p>Endereço</p>
+  <label for="fend">Logradouro</label>
+  <input type="text" id="fend" name="fend"><br><br>
+  <label for="fbairro">Bairro</label>
+  <input type="text" id="fbairro" name="fbairro"><br><br>
+  <label for="fcidade">Cidade</label>
+  <input type="text" id="fcidade" name="fcidade"><br><br>
+  <label for="uf">UF</label>
+  <select id="uf" name="uf"><br>
+      <p>UF </p>
+    <option value="rj">RJ</option>
+    <option value="sp">SP</option>
+    <option value="df" selected>DF</option>
+    <option value="pe">PE</option> 
+  </select><br><br>
+  
+  <label for="email">email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  
+  <input type="reset" value="limpar">
+  
+  <input type="submit" value="Submit" label="enviar">
+  
+  <a href="index.html"> volta perguntas</a>
+
+  
+</form>
+
+</body>
+</html>
