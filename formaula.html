@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <style>
+div {
+  width: 50%;
+}
+fieldset { background-color: #eeeeee;
+}
+
+legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+}
+
+input {
+  margin: 5px;
+}
+      </style>
+<body>
+
+
+
+<div>
+
+<form action="/action_page.php" style="border: 10">
+  <h1>Formulário</h1>
+
+  <fieldset>
+  <legend>Dados Pessoais</legend>
+
+  <label for="fname">Nome:</label>
+  <input type="text" id="fname" name="fname"><br>
+  
+  <label for="birthday">data nascimento</label>
+  <input type="date" id="birthday" name="birthday"><br>
+
+
+<label for="email"> Email</label>
+<input type="email" id="email" name="email"><br>
+<label for="tel">Telefone </label>
+<input type="tel" id="telefone" name="telefone"><br>
+
+  </fieldset>
+<fieldset>
+  <legend>Dados Acadêmicos</legend>
+  
+  <label for="curso">curso</label>
+  <select id="curso" name="curso"><br>
+      
+    <option value="volvo">tcd</option>
+    <option value="">mkt</option>
+    <option value="ads" selected>ads</option>
+    <option value="audi">ti</option> 
+  </select><br><br>
+  <p>Semestre
+    <input type="radio" id="1" name="semestre" value="1">
+      <label for="Semestre">1</label>
+      <input type="radio" id="2" name="semestre" value="2">
+      <label for="2">2</label>
+      <input type="radio" id="3" name="semestre" value="3">
+    <label for="3">3</label>
+    <input type="radio" id="4" name="semestre" value="4">
+    <label for="4">4</label>
+    <input type="radio" id="5" name="semestre" value="5">
+    <label for="5">5</label></p>
+</fieldset>
+  <fieldset>
+    
+  <label for="fname"> Trabalha</label>
+  <input type="checkbox" id="trabalho" name="trabalho"><br><br>
+  <label for="fname">Local de trabalho</label>
+  <input type="text" id="ltra" name="ltra"><br><br>
+  <label for="area">Descreva sua experiência</label><br>
+  <textarea id="area" name="area" rows="4" cols="50"></textarea><br><br> 
+  <a href="index.html"> volta perguntas</a> ou <a href="formulario.html"> Formulário 1</a>
+</fieldset> 
+  
+
+</form>
+</div>
+</body>
+</html>

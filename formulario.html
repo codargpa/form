@@ -6,24 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <style>
-      form {
-          border-radius: 5px;
-          background-color: #f2f2f2;
-          
-          padding: 2% 3%;
-          padding-bottom: 8%;
-          width: 30%;
-          border-width: 10px;
-          border-style: groove; 
-          border-color: #000000;
-  
-        }
-        </style>
+      div {
+  width: 50%;
+}
+fieldset { background-color: #eeeeee;
+}
+
+legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+}
+
+input {
+  margin: 5px;
+}
+</style>
+      
 </head>
   
 <body>
-
+<div>
 <form action="/action_page.php" method="post" >
+  <fieldset>
+    <legend>Formulário</legend>
   <label for="fnome">Nome:</label>
   <input type="name" id="fnome" name="fnome"><br><br>
   
@@ -61,10 +67,10 @@
   
   <input type="submit" value="Submit" label="enviar">
   
-  <a href="index.html"> volta perguntas</a>
-
+  <a href="index.html"> volta perguntas</a> ou <a href="formaula.html"> Formulário 2</a>
+</fieldset>
   
 </form>
-
+</div>
 </body>
 </html>
